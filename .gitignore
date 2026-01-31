@@ -1,0 +1,57 @@
+# ===== SECRETS & ENVIRONMENT =====
+.env
+.env.*
+*.local
+
+# ===== PYTHON RUNTIME =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== VIRTUAL ENVIRONMENTS =====
+.venv/
+venv/
+ENV/
+env/
+
+# ===== DISTRIBUTION/PACKAGING =====
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# ===== TESTING & COVERAGE =====
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ===== TYPE CHECKERS & LINTERS =====
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# ===== IDE/EDITOR =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS FILES =====
+.DS_Store
+Thumbs.db
+
+# ===== JUPYTER =====
+.ipynb_checkpoints/
+
+# ===== LOGS =====
+*.log
+logs/
+
+# ===== DATABASES =====
+*.db
+*.sqlite
+*.sqlite3
