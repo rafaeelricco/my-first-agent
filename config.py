@@ -13,13 +13,25 @@ class Settings(BaseSettings):
 
     api_key: str = Field(default=..., description="API key for the LLM provider")
 
-    model_id: str = Field(default="gemini-3-flash-preview", description="Model identifier")
+    model_id: str = Field(
+        default="gemini-3-flash-preview", description="Model identifier"
+    )
 
     telegram_token: str = Field(
         default=..., description="Telegram Bot API token from BotFather"
     )
     telegram_chat_id: str = Field(
         default=..., description="Telegram chat ID to send messages to"
+    )
+
+    schedule_interval_minutes: int = Field(
+        default=60,
+        description="Interval in minutes between agent runs",
+    )
+
+    schedule_cron: str | None = Field(
+        default=None,
+        description="Optional cron expression (overrides interval if set)",
     )
 
 
